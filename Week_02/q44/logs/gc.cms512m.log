@@ -1,0 +1,64 @@
+[0.026s][info][gc] Using Concurrent Mark Sweep
+[0.203s][info][gc] GC(0) Pause Young (Allocation Failure) 136M->53M(494M) 24.745ms
+[0.242s][info][gc] GC(1) Pause Young (Allocation Failure) 190M->103M(494M) 11.345ms
+[0.296s][info][gc] GC(2) Pause Young (Allocation Failure) 239M->157M(494M) 29.360ms
+[0.352s][info][gc] GC(3) Pause Young (Allocation Failure) 294M->212M(494M) 28.144ms
+[0.353s][info][gc] GC(4) Pause Initial Mark 212M->212M(494M) 0.097ms
+[0.353s][info][gc] GC(4) Concurrent Mark
+[0.357s][info][gc] GC(4) Concurrent Mark 4.470ms
+[0.359s][info][gc] GC(4) Concurrent Preclean
+[0.360s][info][gc] GC(4) Concurrent Preclean 1.192ms
+[0.377s][info][gc] GC(4) Concurrent Abortable Preclean
+[0.409s][info][gc] GC(5) Pause Young (Allocation Failure) 348M->260M(494M) 26.083ms
+[0.473s][info][gc] GC(6) Pause Young (Allocation Failure) 396M->314M(494M) 32.297ms
+[0.506s][info][gc] GC(4) Concurrent Abortable Preclean 128.985ms
+[0.550s][info][gc] GC(8) Pause Full (Allocation Failure) 450M->242M(494M) 44.064ms
+[0.551s][info][gc] GC(7) Pause Young (Allocation Failure) 450M->242M(494M) 44.603ms
+[0.586s][info][gc] GC(9) Pause Young (Allocation Failure) 379M->292M(494M) 8.322ms
+[0.621s][info][gc] GC(10) Pause Initial Mark 292M->292M(494M) 0.063ms
+[0.621s][info][gc] GC(10) Concurrent Mark
+[0.627s][info][gc] GC(10) Concurrent Mark 5.835ms
+[0.628s][info][gc] GC(10) Concurrent Preclean
+[0.629s][info][gc] GC(10) Concurrent Preclean 1.159ms
+[0.643s][info][gc] GC(10) Concurrent Abortable Preclean
+[0.669s][info][gc] GC(11) Pause Young (Allocation Failure) 428M->344M(494M) 20.844ms
+[0.671s][info][gc] GC(10) Concurrent Abortable Preclean 27.440ms
+[0.672s][info][gc] GC(10) Pause Remark 348M->348M(494M) 0.707ms
+[0.673s][info][gc] GC(10) Concurrent Sweep
+[0.674s][info][gc] GC(10) Concurrent Sweep 0.936ms
+[0.677s][info][gc] GC(10) Concurrent Reset
+[0.678s][info][gc] GC(10) Concurrent Reset 0.821ms
+[0.742s][info][gc] GC(13) Pause Full (Allocation Failure) 438M->281M(494M) 43.768ms
+[0.743s][info][gc] GC(12) Pause Young (Allocation Failure) 438M->281M(494M) 44.285ms
+[0.743s][info][gc] GC(14) Pause Initial Mark 281M->281M(494M) 0.042ms
+[0.743s][info][gc] GC(14) Concurrent Mark
+[0.745s][info][gc] GC(14) Concurrent Mark 1.872ms
+[0.758s][info][gc] GC(14) Concurrent Preclean
+[0.759s][info][gc] GC(14) Concurrent Preclean 0.996ms
+[0.761s][info][gc] GC(14) Concurrent Abortable Preclean
+[0.774s][info][gc] GC(15) Pause Young (Allocation Failure) 417M->329M(494M) 7.481ms
+[0.808s][info][gc] GC(14) Concurrent Abortable Preclean 46.530ms
+[0.855s][info][gc] GC(17) Pause Full (Allocation Failure) 465M->298M(494M) 47.070ms
+[0.855s][info][gc] GC(16) Pause Young (Allocation Failure) 465M->298M(494M) 47.626ms
+[0.891s][info][gc] GC(18) Pause Young (Allocation Failure) 434M->344M(494M) 7.343ms
+[0.892s][info][gc] GC(19) Pause Initial Mark 344M->344M(494M) 0.073ms
+[0.892s][info][gc] GC(19) Concurrent Mark
+[0.895s][info][gc] GC(19) Concurrent Mark 2.127ms
+[0.906s][info][gc] GC(19) Concurrent Preclean
+[0.937s][info][gc] GC(19) Concurrent Preclean 30.657ms
+[0.998s][info][gc] GC(21) Pause Full (Allocation Failure) 481M->310M(494M) 65.000ms
+[1.008s][info][gc] GC(20) Pause Young (Allocation Failure) 481M->310M(494M) 74.955ms
+[1.079s][info][gc] GC(23) Pause Full (Allocation Failure) 446M->310M(494M) 42.562ms
+[1.080s][info][gc] GC(22) Pause Young (Allocation Failure) 446M->310M(494M) 43.153ms
+[1.080s][info][gc] GC(24) Pause Initial Mark 311M->311M(494M) 0.046ms
+[1.081s][info][gc] GC(24) Concurrent Mark
+[1.086s][info][gc] GC(24) Concurrent Mark 5.202ms
+[1.095s][info][gc] GC(24) Concurrent Preclean
+[1.108s][info][gc] GC(24) Concurrent Preclean 12.738ms
+[1.108s][info][gc] GC(24) Concurrent Abortable Preclean
+[1.146s][info][gc] GC(24) Concurrent Abortable Preclean 37.591ms
+[1.148s][info][gc] GC(24) Pause Remark 418M->418M(494M) 1.394ms
+[1.149s][info][gc] GC(24) Concurrent Sweep
+[1.149s][info][gc] GC(24) Concurrent Sweep 0.803ms
+[1.152s][info][gc] GC(24) Concurrent Reset
+[1.153s][info][gc] GC(24) Concurrent Reset 0.870ms

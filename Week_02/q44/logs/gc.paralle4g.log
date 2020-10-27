@@ -1,0 +1,4 @@
+[0.028s][info][gc] Using Parallel
+[0.571s][info][gc] GC(0) Pause Young (Allocation Failure) 1024M->223M(3925M) 34.856ms
+[0.837s][info][gc] GC(1) Pause Young (Allocation Failure) 1247M->345M(3925M) 40.392ms
+[1.088s][info][gc] GC(2) Pause Young (Allocation Failure) 1369M->472M(3925M) 37.025ms

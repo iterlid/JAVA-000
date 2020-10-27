@@ -1,0 +1,3 @@
+[0.028s][info][gc] Using Serial
+[0.700s][info][gc] GC(0) Pause Young (Allocation Failure) 1092M->244M(3959M) 98.787ms
+[1.002s][info][gc] GC(1) Pause Young (Allocation Failure) 1337M->395M(3959M) 101.167ms
