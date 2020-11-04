@@ -10,7 +10,7 @@ class helloClassLoader extends ClassLoader {
 
     public static void main(String[] args) {
         try {
-            Object obj = new helloClassLoader().findClass("Hello").newInstance();
+            Object obj = new helloClassLoader().findClass("Hello").getDeclaredConstructor().newInstance();
             Method method = obj.getClass().getMethod("hello");
             method.invoke(obj);
         } catch (Exception e) {
