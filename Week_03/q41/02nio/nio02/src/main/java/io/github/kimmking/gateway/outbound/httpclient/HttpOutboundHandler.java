@@ -1,5 +1,6 @@
 package io.github.kimmking.gateway.outbound.httpclient;
 
+import org.apache.http.Header;
 import org.apache.http.client.methods.CloseableHttpResponse;
 import org.apache.http.client.methods.HttpGet;
 import org.apache.http.impl.client.CloseableHttpClient;
@@ -50,6 +51,7 @@ public class HttpOutboundHandler {
         HttpGet httpGet = new HttpGet(url);
         try (
             CloseableHttpClient httpClient = HttpClients.createDefault();
+            httpGet.addHeader((Header)fullRequest.headers());
             CloseableHttpResponse response = httpClient.execute(httpGet);
         ){
             // 把 内容写入到ctx 
@@ -71,7 +73,7 @@ public class HttpOutboundHandler {
             byte[] body = EntityUtils.toByteArray(endpointResponse.getEntity());
 
             response = new DefaultFullHttpResponse(HTTP_1_1, OK, Unpooled.wrappedBuffer(body));
-            response.headers().set(fullRequest.headers());
+
             response.headers().set("Content-Type", "application/json");
 //            response.headers().setInt("Content-Length", Integer.parseInt(endpointResponse.getFirstHeader("Content-Length").getValue()));
             response.headers().setInt("Content-Length", response.content().readableBytes());
