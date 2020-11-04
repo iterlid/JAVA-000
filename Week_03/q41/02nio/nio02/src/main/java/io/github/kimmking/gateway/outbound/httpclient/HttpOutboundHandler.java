@@ -13,11 +13,16 @@ import io.netty.channel.ChannelHandlerContext;
 import io.netty.handler.codec.http.DefaultFullHttpResponse;
 import io.netty.handler.codec.http.FullHttpRequest;
 import io.netty.handler.codec.http.FullHttpResponse;
+import io.netty.handler.codec.http.HttpHeaders;
 import io.netty.handler.codec.http.HttpUtil;
 
 import static io.netty.handler.codec.http.HttpResponseStatus.NO_CONTENT;
 import static io.netty.handler.codec.http.HttpResponseStatus.OK;
 import static io.netty.handler.codec.http.HttpVersion.HTTP_1_1;
+
+import java.security.KeyStore.Entry;
+import java.util.List;
+import java.util.Map;
 
 public class HttpOutboundHandler {
 
@@ -48,17 +53,17 @@ public class HttpOutboundHandler {
 
     public void handle(final FullHttpRequest fullRequest, final ChannelHandlerContext ctx) {
         final String url = this.backendUrl + fullRequest.uri();
-        HttpGet httpGet = new HttpGet(url);
+        HttpGet httpGet = new HttpGet(url); 
+        final  HttpHeaders headers = fullRequest.headers();//获取Netty内置的请求头对象
+        List<Map.Entry<String, String>> list = headers.entries();
+        for (Map.Entry<String, String> entry : list) {
+            httpGet.addHeader(entry.getKey(), entry.getValue());
+        }
         try (
             CloseableHttpClient httpClient = HttpClients.createDefault();
-            httpGet.addHeader((Header)fullRequest.headers());
+
             CloseableHttpResponse response = httpClient.execute(httpGet);
         ){
-            // 把 内容写入到ctx 
-//              byte[] body = EntityUtils.toByteArray(response.getEntity());
-//            System.out.println(new String(body));
-//            System.out.println(body.length);
-
             handleResponse(fullRequest, ctx, response);
 
 
