@@ -10,3 +10,9 @@ ThreadJoinMethod.java
 
 ## 使用FutureTaskMethod来执行
 FutureTaskMethod.java
+
+## 使用CountDownLatch实现
+CountDownLatchMethod.java
+
+## 使用CyclicBarrier实现
+CyclicBarrierMethod.java
